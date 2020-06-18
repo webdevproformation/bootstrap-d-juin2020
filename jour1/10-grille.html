@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!--  nouveau concept important qui a fait la popularité de bootstrap
+        on vient de voir que bootstrap met à disposition de nombreuses class utilitaire 
+        écrire dans balise une ou plusieurs class et ça fait le café 
+        il suffit juste de connaitre la class pour que ça fonctionne 
+        maintenant bootstrap met à disposition un système de layout => mis en page 
+        ce système va vous permettre de disposer les différents éléments de bases (que l'on vient de voir) les uns à côté des autres
+        j'ai envi de mettre deux tableaux l'un à côté de l'autre 
+        actuellement tout ce met l'un en dessous de l'autre
+        => dans la documentation, chapitre spéciale qui parle du système de grille 
+        Documentation > Layout -->
+    <div class="container">
+        <!-- elle est la balise de base pour la mis en page d'un site 
+            centrer le design dans votre navigateur + elle va être responsive design 
+            elle s'adapte en fonction de la largeur de l'écran qui va lire le design-->
+        <div class="row">
+            <!-- définir un alignement dans le design => row-->
+            <div class="col">
+                <h1 class="bg-primary">titre principal de la page</h1>
+            </div>
+            <div class="col">
+                <p class="bg-danger">Lorem, ipsum dolor.</p>
+            </div>
+        </div>
+        <!-- je veux mettre 5 images l'un à côté de l'autre -->
+        <div class="row">
+            <div class="col">
+                <img src="https://source.unsplash.com/random/400x300" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+                <img src="https://source.unsplash.com/random/400x300" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+                <img src="https://source.unsplash.com/random/400x300" alt="" class="img-fluid">
+            </div>
+        </div>
+        <!-- 
+            le système de grille de bootstrap est simple à comprendre 
+
+            .container qui contient tout le design
+                dans container vous avez des .row (display flex) => alignement dans le design
+                    dans .row ajouter un ou plusieurs colonnes .col
+                        dans ces colonnes vous allez mettre => image / titre / p / tableau ... 
+        -->
+    </div>
+  </body>
+</html>
+<!-- 
+    créer un nouveau fichier 10-exo.html
+
+    .container 
+        ligne (row)
+            1 seule colonne  col
+                h1 texte bleu avec 4 mots
+        
+        ligne
+            2 colonnes
+                dans la première colonne 
+                            tableau thème sombre + effet au passage de souris
+                                4 ligne
+                                    3 colonnes
+                                        2 mots table>tr*4>td*3>lorem2
+                dans la deuxième colonne
+                            tableau thème blue + effet au passage de souris
+                                4 ligne
+                                    3 colonnes
+                                        2 mots
+        ligne
+            5 colonnes
+                chaque colonnes va contenir une image du site unsplash et mis en forme thumbnail 
+
+-->
