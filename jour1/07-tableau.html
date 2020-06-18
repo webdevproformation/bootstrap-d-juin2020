@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+   <h1>Tableau de base en html</h1>
+    <!-- 
+        rappels sur les balises pour créer un tableau en html : 
+        table => balise contient le tableau
+        tr => table row => ligne de tableau
+        td => table div => cellule de tableau
+
+        il y a 4 autres balises pour créer des tableaux
+
+        th => table heading => cellule de titre 
+        thead => zone d'entête dans le tableau
+        tbody => zone de corps dans le tableau
+        tfoot => zone de pied dans le tableau
+
+        7 balises pour créer des tableaux
+    -->
+    <!-- table>tr>th*3>lorem1 -->
+    <table>
+        <tr>
+            <th>Lorem.</th>
+            <th>Cupiditate.</th>
+            <th>Doloremque.</th>
+        </tr>
+        <!-- tr*3>td*3>lorem2 -->
+        <tr>
+            <td>Lorem, ipsum.</td>
+            <td>Provident, officiis?</td>
+            <td>Voluptates, quo.</td>
+        </tr>
+        <tr>
+            <td>Natus, harum.</td>
+            <td>Nisi, est?</td>
+            <td>Quidem, alias.</td>
+        </tr>
+        <tr>
+            <td>Cum, amet!</td>
+            <td>Voluptatum, eos.</td>
+            <td>Consequatur, dolore!</td>
+        </tr>
+    </table>
+    <!-- avec bootstrap => facilement mettre en forme vos tableaux -->
+    <hr>
+    <h1>Premier tableau bootstrap</h1>
+
+    <!-- 
+        tableau de 3 lignes et 3 colonnes contenant 1 mot
+    -->
+
+    <!-- table>tr*3>td*3>lorem1 -->
+    <!--
+        table-primary => bleu
+        table-secondary => gris
+        table-success => vert
+        table-warning => orange
+        table-danger => rouge
+        table-dark => fond noir bordure en clair et la couleur texte en clair
+        table-light => blue gris clair
+    -->
+    <table class="table table-dark">
+        <tr>
+            <td>Lorem.</td>
+            <td>Obcaecati.</td>
+            <td>Ab?</td>
+        </tr>
+        <tr>
+            <td>Expedita.</td>
+            <td>Reprehenderit?</td>
+            <td>Ullam.</td>
+        </tr>
+        <tr>
+            <td>Dolorem.</td>
+            <td>Aspernatur?</td>
+            <td>Velit.</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h1>Deuxième tableau bootstrap</h1>
+    <!-- pour styliser un tableau avec bootstrap => OBLIGATOIREMENT mettre la class table 
+    
+        table-bordered => quadrillage sur les bordures du tableau
+        table-striped => tableau zebré une ligne sur 2 est fond de couleur différent
+        table-hover => changer la couleur de fond au passage de la souris sur le tableau
+    
+    -->
+    <table class="table table-bordered table-striped table-hover">
+        <tr class="bg-dark text-light">
+            <td>Lorem.</td>
+            <td>Numquam.</td>
+            <td>Tempore.</td>
+        </tr>
+        <tr>
+            <td>Nulla.</td>
+            <td>Excepturi.</td>
+            <td>Recusandae!</td>
+        </tr>
+        <tr>
+            <td>Animi.</td>
+            <td>Velit?</td>
+            <td class="bg-danger text-light text-center">1000 €</td>
+        </tr>
+    </table>
+
+    <!-- 
+        il y a  deux ans => bootstrap 
+        display flex et display grid => https://formation.webdevpro.net/display-grid/
+
+        jquery / javascript vanille ??? => les deux 
+        => site internet => composition de plusieurs librairie + un peu de code perso 
+    -->
+  </body>
+</html>
+<!-- 
+    Créer le fichier 08-exo.html contenant
+
+    une div avec la class container
+        h2 taille d'un h1 couleur verte lorem 3
+        deux paragraphes avec 5 mots de votre choix
+        hr
+        h2 lorem4
+        tableau : zebré  effet de surlignage lorsque l'on passe la souris dessus
+            4 lignes (la dernière ligne doit être en fond noir)
+                3 cellules 
+                    lorem2
+        hr  
+        h2 fond rouge texte bleue lorem 4
+        2 paragraphes avec lorem30 (sans mise en forme )
+        => fin du chapitre
+        => next chapitre le système de grille !!!
+-->
