@@ -1,0 +1,72 @@
+<!-- 
+    04-img.html
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- 
+        comme pour le texte, bootstrap met à disposition des class css pour rapidement mettre en forme des images que vous allez insérer dans vos design html
+        https://via.placeholder.com/300x200
+
+        concurrent => unsplash => site internet qui vous donne des images très bonne qualité en open source
+        google => unsplash random => https://source.unsplash.com/
+
+        https://source.unsplash.com/random/300x200
+
+    -->
+    <img src="https://source.unsplash.com/random/300x200" alt="">
+    <img src="https://source.unsplash.com/random/330x200" alt="" class="img-thumbnail">
+    <!-- bordure autour de votre image thumbnail = miniature -->
+
+    <img src="https://source.unsplash.com/random/330x200" alt="" class="rounded">
+    <!-- rounded => mettre des border radius sur l'image -->
+
+    <img src="https://source.unsplash.com/random/200x200" alt="" class="rounded-circle">
+    <!-- si l'image a une largeur et une hauteur égales = cercle -->
+
+    <img src="https://source.unsplash.com/random/250x200" alt="" class="rounded-circle">
+     <!-- si l'image a une largeur et une hauteur différent = oval -->
+
+     <img src="https://source.unsplash.com/random/250x200" alt="" class="rounded-pill">
+     <!-- forme de pillule -->
+
+     <!-- combo de plusieurs règles css simultanément sur une image -->
+    <!-- 
+        image mis en forme de pillule et de miniature et liseret de l'image va être de couleur rouge
+    -->
+    <img src="https://source.unsplash.com/random/300x200" alt="" class="bg-danger rounded-pill img-thumbnail">
+
+    <!-- 
+        demain ou cet après midi => responsive design sur le image img-fluid
+        cette règle permet à l'image de s'adapter à la zone dans laquelle elle est insérée 
+        système de grille de bootstrap  
+    -->
+  </body>
+</html>
+<!-- 
+    créer le fichier 05-exo.html
+
+    ce fichier contient :
+    une div avec la class .container
+        h2 lorem3
+        p fond noir text blanc avec lorem30
+        hr  
+        h2 couleur de police orange lorem4
+        quatres images dont les dimensions sont les suivantes 
+            image 1 dimensions 1200x150 miniature et liseret vert
+            image 2 dimensions 1200x150 miniature et liseret orange
+            image 3 dimensions 400x400 cercle
+            image 3 dimensions 400x400 pillule
+        hr
+        h3 taille d'un h2 > lorem4
+        p>lorem30
+-->

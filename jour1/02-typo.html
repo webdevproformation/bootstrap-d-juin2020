@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        .text-pink{
+            color:pink;
+        }
+        .bg-pink{
+            background: pink;
+        }
+    </style>
+
+    <title>Typographie</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <!-- 
+        Quand on écrit du css en général on va créer des règles pour gérér la 
+        taille des polices de caratères => font-size : 20px
+        avec bootstrap => (le css que vous avez dans le head)
+        bootstrap va vous mettre à disposition des class à utiliser directement dans votre html 
+    -->
+
+    <h1 class="h3">Lorem, ipsum.</h1>
+    <p>Lorem ipsum dolor sit.</p>
+    <h2 class="h1">Lorem, ipsum.</h2>
+    <!-- h2 ait la même taille que le h1 -->
+    <!-- h1 h2 ... h6 => fournie par bootstrap 
+        la balise garde son sens mais elle va changer d'apparence
+    -->
+    <h4 class="h1">sous sous titre</h4>
+
+    <!-- 
+        changer la couleur de la police de caractère
+        bootstrap nous donne des class utilitaires pour pouvoir changer facilement la couleur des polices
+        text-primary => bleu
+        text-secondary => gris
+        text-success => vert
+        text-danger => rouge
+        text-warning => orange
+        text-light => blue clair
+        text-dark => noir 
+        oui il y a un page qui présente 
+    -->
+    <!-- paragraphe taille de h1 et qui est de couleur verte -->
+   <p class="h1 text-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, beatae.</p>
+
+    <!-- h2 qui a une taille de h3 et qui de couleur rouge -->
+    <h2 class="h3 text-danger">Lorem, ipsum dolor.</h2>
+
+    <!-- 
+        mettre en place un fond de couleur sur de la police
+        bg-primary => bleu
+        bg-secondary => gris
+        bg-success => vert
+        bg-danger => rouge
+        bg-warning => orange
+        bg-light => blue clair
+        bg-dark => noir 
+    -->
+    <p class="h1 text-light bg-dark">Lorem, ipsum dolor.</p>
+
+    <!-- titre h3 couleur de rouge et le fond vert-->
+    <h3 class="text-warning bg-pink">Lorem ipsum dolor sit.</h3>
+    <!-- 
+        si j'ai une couleur qui n'existe pas  
+        je vais devoir l'ajouter moi même 
+        la surcharge en css 
+        90% du travail en terme de codage en css 
+        personnalisation => tu dois rajouter quelques règles pour faire ta personnalisation 
+
+        librairie qui va vous donner plein de classe utilitaire pour rapidement pouvoir réaliser vos design
+
+        si vous constatez qu'il manque des règles css => vous devez les ajouter 
+    -->
+  </body>
+</html>
+<!-- 
+    créer le fichier 03-exo.html => qui va contenir bootstrap (juste le css pour l'instant)
+
+    Ce fichier contient :
+    div ayant la class container (parent qui contient toutes les balises suivantes )
+        h1> lorem10 texte couleur bleue
+        p> lorem20 avec la class lead 
+        hr 
+        h2 > lorem 2 texte orange 
+        3 paragraphes lorem30 (pas de mise en forme particulière)
+        hr  
+        h2 taille d'un h1 > le mot conclusion 
+        p*2 > lorem 40 couleur verte 
+        p > lorem10 fond noir et couleur blanche (le plus clair possible)
+
+-->
