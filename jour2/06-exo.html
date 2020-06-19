@@ -1,0 +1,96 @@
+<!-- 
+    créer le fichier 06-exo.html 
+
+    Dans cette page 
+
+    .container
+        ligne 
+            colonne de taille 8
+                    titre de niveau 2 Nous contacter !
+                    formulaire contient 4 groups
+                        groupe 1
+                            label nom + input de type texte
+                        groupe 
+                            label age + input de type texte
+                        groupe
+                            label question + textarea 
+                        groupe
+                            bouton submit de couleur verte 
+
+            colonne de taille 4
+                    image https://source.unsplash.com/random/600x600 responsive + liseret blanc
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+        <section class="row">
+            <div class="col-8">
+                <h2>Nous Contacter !</h2>
+                <form action="">
+                    <div class="form-group">
+                        <label for="">nom</label>
+                        <input type="text" class="form-control nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="">age</label>
+                        <input type="text" class="form-control age">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Question</label>
+                        <textarea name="" id="" cols="30" rows="10" class="form-control question"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-success envoyer">
+                    </div>
+                </form>
+                <!-- 
+                    deuxième composant alert => utiliser pour afficher un message pour internaute suite à une action => remplir un formulaire et le valider 
+                -->
+                <p class="alert"> </p>
+            </div>
+            <div class="col-4">
+                <img src="https://source.unsplash.com/random/600x600" alt="" class="img-thumbnail img-fluid mt-5">
+            </div>
+        </section>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+        $(".envoyer").click(function(e){
+            e.preventDefault();
+
+            let nom = $(".nom").val();
+            let age = $(".age").val();
+            let question = $(".question").val();
+
+            if(nom != "" && age != "" && question != ""){
+                $(".alert").html("Merci pour votre message").addClass("alert-success").removeClass("alert-danger");
+                // stocker les informations saisies dans une base de données => PHP 
+                // formulaire => besoin d'une base de données et d'un peu de PHP 
+            }else{
+                $(".alert").html("Veuillez compléter tous les champs").addClass("alert-danger").removeClass("alert-success");
+            }
+        });
+    </script>
+
+  </body>
+</html>
+
+<!-- 
+    07-card.html
+-->
