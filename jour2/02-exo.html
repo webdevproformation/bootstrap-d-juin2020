@@ -1,0 +1,81 @@
+<!-- 
+    créer le fichier 02-exo.html   contenant
+    => avec le système de grille réaliser rapidement une page web qui tient la route 
+    .container 
+        ligne n°1 entete du site 
+            3 colonnes identiques (même largeur)
+            colonne1 contient logo - fond vert
+            colonne2 contient menu - fond rouge
+            colonne3 contient bouton emoji - fond bleu
+        
+        ligne n°2 contenu
+            deux colonnes 
+            cellule 1 largeur de 8 colonnes contient : article - fond noir et texte blanc
+            cellule 2 largeur de 4 colonnes contient : barre de latérale de menu - fond gris
+
+        ligne n°3 pied de page
+            deux colonnes (même largeur)
+            colonne 1 lien mention légale du site - fond rouge
+            colonne 2 formulaire de contact - fond bleu
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+        <header class="row">
+            <div class="col bg-success">
+                <img src="https://source.unsplash.com/random/150x50" alt="" class="img-fluid">
+            </div>
+            <div class="col bg-danger">
+                <ul class="row" style="list-style: none;">
+                    <li class="col"><a href="#">Accueil</a></li>
+                    <li class="col"><a href="#">Présentation</a></li>
+                    <li class="col"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col bg-primary text-right">
+               <button>🦓</button> 
+            </div>
+        </header>
+        <section class="row">
+            <div class="col-8 bg-dark text-light">
+                <h2>Article 1</h2>
+                <img src="https://source.unsplash.com/random/500x300" alt="" class="img-fluid">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque id dolor autem saepe, quis labore doloribus numquam nobis accusantium, nihil aliquam exercitationem, fugiat ut! Magnam iure asperiores libero cum velit.</p>
+            </div>
+            <div class="col-4 bg-light">
+                <h2>Barre latérale</h2>
+                <ul>
+                    <!-- li*5>{Article $} -->
+                    <li>Article 1</li>
+                    <li>Article 2</li>
+                    <li>Article 3</li>
+                    <li>Article 4</li>
+                    <li>Article 5</li>
+                </ul>
+            </div>
+        </section>
+        <footer class="row">
+            <div class="col bg-danger text-center">
+                <p>mentions légales</p>
+            </div>
+            <div class="col bg-primary text-center">
+                <form action="">
+                    <input type="text">
+                    <input type="submit">
+                </form>
+            </div>
+        </footer>
+    </div>
+  </body>
+</html>
