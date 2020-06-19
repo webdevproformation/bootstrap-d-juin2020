@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- 
+        le concept de grille 
+        ligne qui vont avoir la class .row
+         dans ces lignes ajouter des .col
+            dans ces colonnes on met le contenu : h2 / p / img / table / ul / iframe .... 
+
+        approfondir 
+
+        Dans une row on peut au maximum 12 colonnes 
+        Dans bootstrap 
+            col 
+            col => vu que le développeur m'a mis 2 col => je vais découper l'espace disponible dans la ligne en 2 colonnes de largeur identique
+
+            si je mets deux colonnes => 50% de la largeur de la ligne
+            si je mets 3 colonnes => 33.33333% de la largeur de la ligne
+            si je mets 4 colonnes => 1/4 de la largeur de la ligne => 25%
+
+            en fonction du nombre de colonne dans une ligne => la largeur de la colonne ne va pas être la même !!!  
+
+            sachez qu'il est possible de forcer la largeur des colonnes en utilisant la syntaxe suivante :
+
+            col-2 => ligne 12 colonnes => de mettre dans cette ligne une colonne de largeur 2 
+            donc la colonne 2/12 = 16 % de la ligne
+
+            col-6 => donc la largeur de la colonne 6/12 => 50% de la ligne
+
+            col-3 => 3/12 => donc la lageur de la colonne 25%
+
+            Utilisons ce nouveau concept
+    -->
+   
+    <div class="container">
+        <section class="row">
+            <div class="col-2 bg-danger">
+                <img src="https://source.unsplash.com/random/300x200" alt="" class="img-fluid">
+            </div>
+            <div class="col-4 bg-info">
+                <img src="https://source.unsplash.com/random/300x200" alt="" class="img-fluid">
+            </div>
+            <div class="col-6 bg-secondary">
+                <img src="https://source.unsplash.com/random/300x200" alt="" class="img-fluid">
+            </div>
+            <div class="col-3 bg-success">
+                <img src="https://source.unsplash.com/random/200x200" alt="" class="img-fluid">
+            </div>
+        </section>
+        <!-- les colonnes n'ont pas la meme largeur !
+            largeur de la première et la deuxième  = largeur de la troisième colonne
+             2 + 4                                 =  6
+
+             si je rajoute une nouvelle colonne => elle passe à la ligne !
+             ?? 2 + 4 + 6 = 12
+             dès que l'on atteint 12 colonnes => laligne est remplie
+             et automatiquement les colonnes suivantes vont passer à la ligne
+        -->
+    </div>
+  </body>
+</html>
+<!-- 
+    
+-->
