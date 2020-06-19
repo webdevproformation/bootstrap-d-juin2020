@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- 
+        le composant formulaire dans la documentation Components > Forms
+        pour utiliser le composant on va le placer dans une grille => deux colonnes de largeur identiques
+    -->
+    <div class="container">
+        <section class="row">
+            <div class="col">
+                <h2>Formulaire de base en html</h2>
+                <form action="" method=""><!-- si on veut traiter le formulaire via un script PHP -->
+                    <label for="">email</label>
+                    <input type="text">
+                    <label for="">commentaire</label>
+                    <textarea name="" id="" cols="2" rows="2"></textarea>
+                    <input type="submit">
+                </form>
+                <!-- formulaire zone complexe => contient plein de balise => bootstrap permet de faciliter sa mise en forme !!! -->
+            </div>
+            <div class="col">
+                <h2>Formulaire avec bootstrap</h2>
+                <form action="">
+                    <div class="form-group">
+                        <label for="">email</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">commentaire</label>
+                        <textarea name="" id="" cols="2" rows="2" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group text-right">
+                        <input type="submit" class="btn btn-primary">
+                        <!-- tableau table table-primary -->
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
